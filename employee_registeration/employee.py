@@ -42,13 +42,11 @@ class Employee:
             print('------------------------------------------------------------------------')
 
 
-register_another_emp = True
-
-while register_another_emp:
+while True:
     employee = Employee()
     employee.register_employee()
     register = input('Do you want to register more? (y/n) ')
     if register in ['n', 'N']:
-        register_another_emp = False
+        break
 
 Employee.print_employee_detail()
